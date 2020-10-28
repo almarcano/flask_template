@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+
+
+{% block title %} ALMARCANO.US {% endblock %}
+
+{% block body %}
+
+<!-- Background Image -->
+<section id="home" class="d-flex align-items-center position-relative vh-100 cover hero" 
+style="background-image:url({{url_for('static', filename='img/background-coding1.jpg')}});">
+<div class="container-fluid container-fluid-max">
+    <div class="row">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+            <center>
+                <a class="navbar-brand" href="#">
+                    <img  src="{{ url_for('static', filename='img/am_logo_color.png') }}" 
+                    alt="" class="img-fluid mr-lg-4">
+                </a>
+                <h1 class="text-white mt-5">INTERNET DE LAS COSAS</h1>
+                <div class="mt-3">
+                    <a class="btn text-white p-4" href="" role="button">Automatizaciones y soluciones tecnológicas aplicadas a su casa u oficina</a>
+                    <a class="btn bg-red text-white" href="" role="button">Ver Mas...</a>
+                </div> 
+            </center>
+        </div>
+    </div>
+</div>
+</section>
+<!-- Overview Section - How it Works -->
+    <main role="main">
+        <section id="process" class="process">
+        <div class="container-fluid container-fluid-max">
+          <div class="row text-center py-5">
+            <div class="col-12 pb-4">
+              <h2 class="text-red">How it Works</h2>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <span class="fa-stack fa-2x">
+                    <i class="fas fa-circle fa-stack-2x text-red"></i>
+                    <i class="fas fa-map-marked fa-stack-1x text-white"></i>
+                  </span>
+                  <h3 class="mt-3 text-red h4">Choose a destination</h3>
+                  <p>Choose a destination around the world!!!</p> 
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <span class="fa-stack fa-2x">
+                    <i class="fas fa-circle fa-stack-2x text-red"></i>
+                    <i class="fas fa-plane fa-stack-1x text-white"></i>
+                  </span>
+                  <h3 class="mt-3 text-red h4">Book a Flight</h3>
+                  <p>Book a Flight for all our destinations around the world!!!</p> 
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <span class="fa-stack fa-2x">
+                    <i class="fas fa-circle fa-stack-2x text-red"></i>
+                    <i class="fas fa-map-marked fa-stack-1x text-white"></i>
+                  </span>
+                  <h3 class="mt-3 text-red h4">Rent a Car</h3>
+                  <p>Rent a car from hundreds of choices!!!</p> 
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <span class="fa-stack fa-2x">
+                    <i class="fas fa-circle fa-stack-2x text-red"></i>
+                    <i class="fas fa-map-marked fa-stack-1x text-white"></i>
+                  </span>
+                  <h3 class="mt-3 text-red h4">Rent an Apartment</h3>
+                  <p>Rent an apartment many places around the world!!!</p> 
+            </div>
+            <div class="col-12 pt-3">
+              <a class="btn bg-red text-white" target="_blank" href="" role="button">Learn More →</a>
+            </div>
+          </div>
+        </div>
+    </div>
+ <!-- Split Block Sections -->
+      <section id="services" class="featured-destinations bg-lightblue">
+          <div class="row no-gutters">
+          <div class="col-12 col-md-6 d-flex align-items-center order-1 order-md-0">
+              <div class="p-15">...</div>
+          </div>
+          <div class="col-12 col-md-6 order-0 order-md-1">
+              <div class="vh-100 cover" style="background-image:url({{url_for('static', filename='img/IOT01.png')}});">...</div>
+          </div>
+          <div class="col-12 col-md-6 order-2">
+              <div class="vh-100 cover" style="background-image:url({{url_for('static', filename='img/IOT02.jpg')}});">...</div>
+          </div>
+          <div class="col-12 col-md-6 d-flex align-items-center order-3">
+              <div class="p-15">...</div>
+          </div>
+      </section>
+    </main>
+    
+    <!-- FOOTER -->
+    <footer id="footer" class="py-5 page-footer">
+        <div class="container-fluid container-fluid-max">
+          <div class="row">
+            <div class="col-12 col-md-6 footer-child copyright">Alcides Marcano © 2020 All Rights Reserved</div>
+            <div class="col-12 col-md-6 footer-child footer-links">
+              <a class="mr-3" href="#home" >Back to Top</a>
+              <a href="">...</a>
+              <div>
+                <small>...</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+{% endblock %}
